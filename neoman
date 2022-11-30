@@ -1,4 +1,5 @@
 #!/bin/sh
+#~ItzSelenux
 
 echo m=$2 > /tmp/nman
 source /tmp/nman
