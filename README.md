@@ -1,6 +1,8 @@
 # NeoMan
 NeoMan is a program that get Man Pages from web
 
+![screenshot](/screenshot.png)
+
 Options: 
 
     arch
