@@ -114,6 +114,11 @@ printf "${c}deleting / ...${NC}\n"
 printf "\033[0;32m operation cancelled by a duck.${NC}\n"
 }
  
+if [ -z "$1" ]; then
+printf "${c}ERROR:${NC} No arguments specified\n"
+exit
+fi
+
 if [ -z "$2" ]
 	
 then
