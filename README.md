@@ -20,3 +20,7 @@ Options:
     void
     
     -v  Search on Void Linux ManPages
+
+    query
+
+    -q query with Arch Linux ManPage searcher
