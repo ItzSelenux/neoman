@@ -8,9 +8,6 @@ f2=\&manpath=FreeBSD+13.1-RELEASE+and+Ports
 c='\033[0;31m'
 NC='\033[0m'
 
-echo m=$2 > ~/.cache/.nman
-source ~/.cache/.nman
-
 help()
 {
    printf "NeoMan is a program that get Man Pages from web
@@ -109,6 +106,18 @@ else
 fi
 
 }
+
+if [ -z "$2" ]
+  then
+    echo "No ManPages specified, using Debian ManPages"
+		echo m=$1 > ~/.cache/.nman
+		source ~/.cache/.nman
+		deb
+
+fi
+
+echo m=$2 > ~/.cache/.nman
+source ~/.cache/.nman
 
 case "${1}" in
    arch)
