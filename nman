@@ -109,10 +109,10 @@ fi
 
 if [ -z "$2" ]
   then
-    echo "No ManPages specified, using Debian ManPages"
+    echo "No ManPages specified, using Arch ManPages"
 		echo m=$1 > ~/.cache/.nman
 		source ~/.cache/.nman
-		deb
+		arch
 
 fi
 
