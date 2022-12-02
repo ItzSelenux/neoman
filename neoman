@@ -22,10 +22,26 @@ Options:
 arch()
 {
 curl -s https://man.archlinux.org/man/$m.1 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.2 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.3 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.4 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.5 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.6 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.7 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.8 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
+curl -s https://man.archlinux.org/man/$m.9 | sed 's/<\/*[^>]*>//g' | sed '1,57d' | head -n -69
 }
 deb()
 {
 curl -s https://manpages.debian.org/bullseye/$m/$m.1.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.2.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.3.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.4.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.5.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.6.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.7.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.8.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
+curl -s https://manpages.debian.org/bullseye/$m/$m.9.en.html | sed 's/<\/*[^>]*>//g' | sed '1,877d' | head -n -52
 }
 void()
 { 
