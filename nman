@@ -120,6 +120,12 @@ then
      if [[ $1 == man ]];
 			then
 				noman 
+     elif [[ $1 == help ]];
+			then
+				echo 
+     elif [[ $1 == -h ]];
+			then
+				echo 
       else
     echo "No ManPages specified, using Arch ManPages"
 		echo m=$1 > ~/.cache/.nman
@@ -132,7 +138,6 @@ if [[ $2 == man ]]; then
 noman
 exit
 fi
-
 
 echo m=$2 > ~/.cache/.nman
 source ~/.cache/.nman
