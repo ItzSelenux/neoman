@@ -107,14 +107,32 @@ fi
 
 }
 
+noman()
+{ 
+printf "there is no reason to search ${c}man${NC} manpages using nman\n"
+printf "${c}deleting / ...${NC}\n"
+printf "\033[0;32m operation cancelled by a duck.${NC}\n"
+}
+ 
 if [ -z "$2" ]
-  then
+	
+then
+     if [[ $1 == man ]];
+			then
+				noman 
+      else
     echo "No ManPages specified, using Arch ManPages"
 		echo m=$1 > ~/.cache/.nman
 		source ~/.cache/.nman
 		arch
-
 fi
+fi
+
+if [[ $2 == man ]]; then
+noman
+exit
+fi
+
 
 echo m=$2 > ~/.cache/.nman
 source ~/.cache/.nman
@@ -130,6 +148,8 @@ case "${1}" in
       void;;
    query)
       query;;
+   query)
+      man;;
    help)
       help;;
 esac
